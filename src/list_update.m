@@ -27,5 +27,11 @@ transpose2_count = Transpose2(transpose2_list, request);
 transpose2_list = [];
 
 transpose2_count
+
+fc_list = list;
+fc_count = FC(fc_list, request);
+fc_list = [];
+
+fc_count
 end
 
