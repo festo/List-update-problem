@@ -9,7 +9,7 @@ Implementation of the following algorithm
  - FC
  
 ## Usage ##
-`list_update( list_size, request_size, iteration )`
+`list_update( list_size, request_size, iteration, random_type )`
 
 eg.:
-`list_update(100, 5000, 100);`
+`list_update(100, 5000, 100, 'uniform');`

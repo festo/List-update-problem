@@ -1,4 +1,4 @@
-function [ output_args ] = list_update( list_size, request_size, iteration )
+function [ output_args ] = list_update( list_size, request_size, iteration, random_type )
 
 list = [];
 request = [];
@@ -8,8 +8,15 @@ list = randperm(list_size);
 
 for it=1:iteration
 
-    for i=1:request_size,
-       request(i) = randi(list_size, 1); 
+    for i=1:request_size
+        if strcmp(random_type,'uniform')
+            request(i) = randi(list_size, 1);              
+        elseif strcmp(random_type,'geom')
+            request(i) = geom_rand(list_size); 
+        else
+            disp('Wronk parameter');
+            return;
+        end
     end
 
     mtf_list = list;
