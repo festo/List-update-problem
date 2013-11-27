@@ -13,3 +13,5 @@ Implementation of the following algorithm
 
 eg.:
 `list_update(100, 5000, 100, 'uniform');`
+
+Created at 2013.11.28.
