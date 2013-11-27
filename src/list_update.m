@@ -12,7 +12,7 @@ for it=1:iteration
         if strcmp(random_type,'uniform')
             request(i) = randi(list_size, 1);              
         elseif strcmp(random_type,'normal')
-            request(i) = geom_rand(list_size); 
+            request(i) = gauss_rand(list_size); 
         else
             disp('Wronk parameter');
             return;

@@ -1,4 +1,4 @@
-function [ rand_number ] = geom_rand( max )
+function [ rand_number ] = gauss_rand( max )
 
 r = randn(1);
 
