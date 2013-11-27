@@ -56,6 +56,18 @@ fprintf(' - min: %d \n', min(fc_count));
 fprintf(' - max: %d \n', max(fc_count));
 fprintf(' - mean: %d \n', mean(fc_count));
 
+figure;
+hold on;
+
+plot(1:iteration, mtf_count, 'Color','g');
+plot(1:iteration, transpose_count, 'Color','r');
+plot(1:iteration, transpose2_count, 'Color','b');
+plot(1:iteration, fc_count, 'Color','k');
+
+xlabel('Iteracio szam');
+ylabel('Keresesek költsége');
+legend('MTF', 'Transpose', 'Transpose2', 'FC', 'Location', 'NorthWest');
+
 
 end
 
